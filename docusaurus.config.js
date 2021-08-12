@@ -106,5 +106,10 @@ module.exports = {
       },
     ],
   ],
-  plugins: ['docusaurus-plugin-sass'],
+  plugins: [
+    'docusaurus-plugin-sass',
+    [require.resolve('@cmfcmf/docusaurus-search-local'), {
+      language: "zh",
+    }]
+  ],
 };
