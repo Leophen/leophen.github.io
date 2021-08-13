@@ -1,0 +1,9 @@
+html[data-theme='dark'] {
+  --ifm-font-color-base: #304455;
+  --ifm-heading-color: #fff;
+  p {
+    code {
+      color: red;
+    }
+  }
+}
