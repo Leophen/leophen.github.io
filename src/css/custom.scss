@@ -1,6 +1,8 @@
 .markdown {
-  @import './markdown/_font.scss';
+  @import './markdown/index.scss';
 }
+
+@import './search/index.scss';
 
 :root {
   --ifm-color-primary: #25c2a0;
