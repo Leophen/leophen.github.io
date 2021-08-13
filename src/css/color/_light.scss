@@ -1,9 +1,42 @@
 :root {
+  /* 
+   * 主题色
+   */
+  --ifm-color-primary: #42b983;
+
+
+
+
+
+  /* 
+   * 字体
+   */
   --ifm-font-color-base: #304455;
   --ifm-heading-color: #515151;
+  h4,
+  h5,
+  h6 {
+    --ifm-heading-color: #616060;
+  }
+  h2 {
+    border-color: #c4c3c3;
+  }
+  // 引用块
+  --ifm-blockquote-foreground-color: #515151;
+  --ifm-blockquote-border-color: #dadada;
+  --ifm-blockquote-background-color: #f9f9fb;
   p {
     code {
       color: #e83e8c;
     }
   }
+
+
+
+
+
+  /* 
+   * 背景
+   */
+  --ifm-background-color: #fff;
 }
