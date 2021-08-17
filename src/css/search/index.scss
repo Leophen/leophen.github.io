@@ -1,0 +1,71 @@
+// 初始态
+.dsla-search-wrapper {
+  width: 120px;
+  .aa-DetachedSearchButton {
+    border-radius: 24px;
+    border: 1px solid #EBEBEB;
+    transition: all 0.2s ease-out;
+    &:hover,
+    &:focus {
+      border-color: #999;
+      box-shadow: none;
+    }
+  }
+  .aa-DetachedSearchButtonIcon {
+    cursor: pointer;
+  }
+  .aa-SubmitIcon {
+    color: #999;
+  }
+}
+
+// 聚焦态
+.aa-Detached {
+  .navbar__items--right {
+    margin-right: 391px;
+    transition: all 0.2s ease-out;
+  }
+  .dsla-search-wrapper {
+    opacity: 0;
+  }
+  .aa-DetachedOverlay {
+    background-color: transparent;
+    @keyframes widthChange {
+      0% {
+        width: 120px;
+      }
+      100% {
+        width: 511px;
+      }
+    }
+    .aa-DetachedContainer--modal {
+      width: 511px;
+      top: 8px;
+      left: auto;
+      right: 16px;
+      border-radius: 24px;
+      margin: 0;
+      border: 1px solid #999;
+      box-shadow: none;
+      animation: widthChange 0.2s ease-out;
+    }
+    .aa-DetachedFormContainer {
+      border: none;
+      padding: 0;
+      .aa-Form {
+        border: none;
+        box-shadow: none;
+        &:focus-within {
+          border: none;
+          box-shadow: none;
+        }
+      }
+    }
+    .aa-DetachedCancelButton {
+      display: none;
+    }
+    .aa-SubmitIcon {
+      color: #999;
+    }
+  }
+}
